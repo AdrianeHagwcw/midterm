@@ -309,6 +309,92 @@ li a{
     box-shadow: 0 5.5px 10.5px 5px #000000;
 }
 
+@media screen and (max-width: 340px ){
+    .nav-bar_menu-links{
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-img_profile{
+        height: 480px;
+        width: 100%;
+        background-color: #F2E8E7;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+
+    .hero-title h1{
+        font-size: 60px;
+        font-family: 700;
+    }
+
+    .about-me {
+        padding: 20px 20px;
+    }
+    
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 50px 30px 40px;
+
+    }
+
+    .hero-img_profile {
+        height: 300px;
+        width: 80%;
+    }
+
+    .loader{
+        margin-left: 5px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .about-us_display {
+        flex-direction: column;
+    }
+
+    .about-us_row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.181);
+    }
+    
+    .third {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.181);
+        border-right: 1px solid rgba(0, 0, 0, 0.181);
+    }
+    
+    .fourth {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.181);
+        border-right: none;
+    }
+
+    .bestfood-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .special-menu__cards-info h6 {
+        bottom: 2px
+    }
+
+    .my-info_cards img {
+        height: 3rem;
+        margin: 0;
+    }
+
+}
+
 @media screen and (max-width: 880px) {
 
     nav {
