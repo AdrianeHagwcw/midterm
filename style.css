@@ -309,6 +309,40 @@ li a{
     box-shadow: 0 5.5px 10.5px 5px #000000;
 }
 
+@media screen and (max-width: 880px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 780px) {
 
     .nav-bar_menu-links{
