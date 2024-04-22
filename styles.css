@@ -53,7 +53,7 @@
 
 
 
-/* HERO */
+/* home */
 
 .hero {
     padding: 100px 60px 30px 60px;
@@ -132,11 +132,14 @@
     border-radius: 100%;
 }
 
-/* CHOOSE-US */
+/* about */
 
 .choose-us {
     background: #f0e1e1;
-    padding: 80px 60px;
+    padding: 100px 60px 30px 60px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .choose-us__display {
@@ -214,7 +217,7 @@
 }
 
 
-/* menu */
+/* projects */
 
 
 .special-menu {
@@ -290,61 +293,82 @@
 }
 
 
-/* services */
+/* contacts */
 
+.project {
+    padding: 250px 60px;
+    background-color: #a59694;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
-.my-info{
-    background-color: rgb(59, 59, 59);
-    padding: 20px 30px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 0%;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-}
-
-.my-info h1{
-    text-align: center;
+.project h1 {
+    margin-bottom: 2rem;
+    font-weight: 600;
     font-size: 40px;
-    color: #F2E8E7;
+    text-align: center;
 }
 
-.my-info_cards {
-    padding: 20px;
+.spec-menu__cards {
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 7.5px 22.5px 6px #868282;
     transition: all 0.3s ease-in-out;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
 }
 
-.my-info_cards img {
-    height: 3rem;
-    width: 30%;
-    margin: 0px 100px;
-    border: 5px solid#000000;
-    border-radius: 100%;
+.spec-menu__cards:hover {
+    color:  #f5f0f0;
+    transform: scale(1.05);
+    -moz-box-shadow: 0 7.5px 22.5px 6px #f2f2f2;
+    box-shadow: 0 7.5px 22.5px 6px #3b3a3a;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
 }
 
-.my-info_cards img:hover {
-    transform: scale(1.20);
-    box-shadow: 0 5.5px 10.5px 5px #000000;
+.spec-menu__cards:hover .backgroundEffect {
+    bottom: 0;
+    height: 165px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: rgb(0, 0, 0);
 }
 
+.spec-menu__cards img {
+    height: 220px;
+    width: 100%;
+}
 
+.spec-menu__cards-info {
+    padding: 1rem;
+    position: relative;
+}
 
+.spec-menu__cards-info h2 {
+    font-size: 1.2rem;
+}
 
+.spec-menu__cards-info p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
 
+.spec-menu__cards-info a {
+    text-underline-offset: 5px;
+    color: #141414;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: 700;
+}
 
-
-
-
-
-
-
-
+.spec-menu__cards:hover .special-menu__cards-info a {
+    color: #ffffff;
+}
 
 
 /* @media screen and (max-width: 880px) {
@@ -469,7 +493,7 @@
     }
 
     .special-menu {
-        padding: 30px 20px;
+        padding: 150px 20px;
     }
 
     .nav-container {
@@ -490,6 +514,11 @@
     .hero-img__burger {
         height: 300px;
         width: 80%;
+    }
+
+    .choose-us {
+        padding: 125px 60px 30px 60px;
+       
     }
 
     .choose-us__display {
@@ -525,4 +554,3 @@
 @keyframes spin{
     100%{transform: rotate(360deg);}
 }
-
